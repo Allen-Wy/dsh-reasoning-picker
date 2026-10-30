@@ -1,0 +1,57 @@
+{
+  "name": "dsh-reasoning-picker",
+  "version": "0.1.0",
+  "description": "Composer button that estimates the right model tier (Flash/Pro) and reasoning effort for your draft, then applies it with one click. Never sends the message for you.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "reasoning-effort",
+    "model-selection",
+    "composer",
+    "token-saving",
+    "cost-control",
+    "deepseek"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allen-Wy/dsh-reasoning-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Allen-Wy/dsh-reasoning-picker/issues"
+  },
+  "homepage": "https://github.com/Allen-Wy/dsh-reasoning-picker#readme",
+  "author": "Allen-Wy",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["react-dom"]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
